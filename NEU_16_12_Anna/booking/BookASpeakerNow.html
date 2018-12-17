@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>Speakovation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Lato", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.pos_right {
+    position: relative;
+    margin-right:250px;
+}
+
+@media (max-width: 800px) {                  
+   .content-to-hide {
+      display: none;
+   }
+}
+
+</style>
+<body  style="max-width:1200px">
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="../Homepage.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="../Homepage.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i></i><i> </i>ABOUT</a>
+    <a href="BookASpeaker.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i></i><i> </i>BOOK A SPEAKER</a>
+    <a href="../VR/login.html" class="w3-bar-item w3-button w3-hide-small" id="login"><i class="fa fa-lock"></i></i><i> </i>LOGIN</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i>
+    <a href="../Homepage.html#contact" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-envelope"></i></i><i> </i>CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="../Homepage.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="../Homepage.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">BOOK A SPEAKER</a>
+    <a href="../Homepage.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="../Homepage.html#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+
+	
+	</div>
+ 
+ 
+<!-- Sidebar/menu -->
+<div class="w3-padding-64">
+<nav class="w3-sidebar w3-bar-block content-to-hide" style="width:280px" id="mySidebar">
+  
+    <div class="w3-bar-item w3-border">CATEGORIES</div>
+	<a href="BookASpeaker.html" class="w3-bar-item w3-button w3-dark-grey">All Speakers</a>
+	<a href="Innovation.html" class="w3-bar-item w3-button w3-dark-grey">Innovation</a>
+	<a href="#" class="w3-bar-item w3-button w3-dark-grey">Science & Technology</a>
+	<a href="BookASpeakerNow.html" class="w3-bar-item w3-button w3-black">BOOK NOW</a>
+  
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-center">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+
+
+
+
+
+  
+  
+  <!-- Footer -->
+  
+  <footer class="w3-padding-64 w3-light-grey w3-right" style="width:830px" >
+   
+      <div class="w3-col w3-row-padding w3-center">
+        <h4>REQUEST FOR A SPEAKER</h4>
+        <p style="w3-dark-grey">Your Details.</p>
+        <form style="margin:30px 100px 0 100px" action="" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Company" name="Company" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Telephone" name="Telephone" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+		  <p><input class="w3-input w3-border" type="text" placeholder="Title" name="Title" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Website" name="Website" required></p>
+          
+        </form> 
+		
+		<p style="w3-dark-grey">Assignment request.</p>
+        <form style="margin:30px 100px 0 100px" action="" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Assignment Date" name="Assignmentdate" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Event Project Name" name="Eventprojectname" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Theme/Objective" name="Themeobjective" required></p>
+		  <p><input class="w3-input w3-border" type="text" placeholder="Event Project Name" name="Eventprojectname" required></p>
+         	
+		  <p style="w3-dark-grey">Audience Profile <select name="Audience Profile" form="audienceprofil" required>
+			  <option value="" selected disabled hidden>- Select -</option>
+			  <option value="National">National</option>
+			  <option value="Regional">Regional</option>
+			  <option value="Global">Global</option>
+			</select>
+		<p>
+		<p style="w3-dark-grey">Duration <select name="Duration" form="Duration"  required>
+			  <option value="" selected disabled hidden>- Select -</option>
+			  <option value="onehourorless">1 hour or less</option>
+			  <option value="oneortwo">1 - 2 hours</option>
+			  <option value="halfday">halfday</option>
+			</select>
+		<p>
+		
+		<button type="submit" class="w3-center w3-button w3-block w3-black">Send</button>
+			 </form>
+		  
+        	
+    </div>
+  </footer>
+  
+
+  
+
+  <!-- End page content -->
+</div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+	
+// start new site
+function startWebsite() {
+	var newWindow = window.open("", "_self");
+	newWindow.document.write("<p>I replaced the current window.</p>");
+	}
+}
+</script>
+
+</body>
+</html>
